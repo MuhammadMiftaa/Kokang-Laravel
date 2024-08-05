@@ -9,7 +9,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
-<body class="overflow-hiden">
+<body class="overflow-hidde">
 
     <header
         class="after:content-[''] after:absolute after:top-0 after:bottom-0 after:left-0 after:right-0 after:bg-gradient-to-t after:from-black after:to-[rgba(0,0,0,.5)]">
@@ -52,21 +52,24 @@
                     <ul
                         class="font-light font-quantico text-sm uppercase flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
                         <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                            <a href="/"
+                                class="block py-2 px-3 text-white relative bg-black rounded md:bg-transparent md:text-black md:p-0 dark:text-white md:dark:text-black"
                                 aria-current="page">Home</a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Brands</a>
+                            <a href="/firearms"
+                                class="block py-2 px-3 text-zinc-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Firearms</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                                class="block py-2 px-3 text-zinc-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Ammo</a>
+                        </li>
+                            <a href="#"
+                                class="block py-2 px-3 text-zinc-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Grenade</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
+                                class="block py-2 px-3 text-zinc-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 dark:text-white md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
                                 Us</a>
                         </li>
                     </ul>
@@ -136,7 +139,7 @@
         <div class="flex px-20 gap-8 mt-24">
             <div
                 class="relative w-full h-[32rem] bg-zinc-400 after:content-[''] after:absolute after:bottom-0 after:w-full after:h-72 after:bg-gradient-to-t after:from-black after:to-transparent">
-                <img src="/header-1.jpg" class="h-full object-cover object-center" alt="">
+                <img src="/last-release.jpg" class="h-full object-cover object-center" alt="">
                 <div
                     class="flex flex-col items-center uppercase font-quantico w-fit cursor-pointer text-zinc-600 hover:text-white font-bold absolute bottom-8 z-10 left-1/2 -translate-x-1/2">
                     <h1 class="text-5xl mb-4 text-zinc-300 text-nowrap">Last Release</h1>
@@ -146,7 +149,7 @@
             </div>
             <div
                 class="relative w-full h-[32rem] bg-zinc-400 after:content-[''] after:absolute after:bottom-0 after:w-full after:h-72 after:bg-gradient-to-t after:from-black after:to-transparent">
-                <img src="/header-1.jpg" class="h-full object-cover object-center" alt="">
+                <img src="/discount.jpg" class="h-full object-cover object-center" alt="">
                 <div
                     class="flex flex-col items-center uppercase font-quantico w-fit cursor-pointer text-zinc-600 hover:text-white font-bold absolute bottom-8 z-10 left-1/2 -translate-x-1/2">
                     <h1 class="text-5xl mb-4 text-zinc-300 text-nowrap">35% Off</h1>
@@ -164,29 +167,29 @@
             <h1 class="font-poppins text-3xl mb-12 font-bold">Choose Firearms for Your Needs</h1>
             <div class="flex gap-12">
                 <div class="w-full h-72 bg-zinc-200 group relative cursor-pointer">
-                    <img src="/header.jpg"
-                        class="h-full object-cover object-center group-hover:grayscale-0 grayscale duration-500"
+                    <img src="/selfdefense.jpg"
+                        class="h-full w-full object-cover object-center group-hover:grayscale-0 grayscale duration-500"
                         alt="">
                     <h1 class="font-quantico italic">Self-Defense</h1>
                     {{-- <h1 class="py-1 px-3 bg-[rgba(0,0,0,.9)] border border-orange-800] group-hover:block w-fit max-auto my-auto duration-200 font-poppins font-semibold text-white absolute hidden top-1/2 left-1/2 -translate-y-[50%] -translate-x-[50%] ">Check It</h1> --}}
                 </div>
                 <div class="w-full h-72 bg-zinc-200 group relative cursor-pointer">
-                    <img src="/header-1.jpg"
-                        class="h-full object-cover object-center group-hover:grayscale-0 grayscale duration-500"
+                    <img src="/hunting.jpg"
+                        class="h-full w-full object-cover object-center group-hover:grayscale-0 grayscale duration-500"
                         alt="">
                     <h1 class="font-quantico italic">Hunting</h1>
                     {{-- <h1 class="py-1 px-3 bg-[rgba(0,0,0,.9)] border border-orange-800] group-hover:block w-fit max-auto my-auto duration-200 font-poppins font-semibold text-white absolute hidden top-1/2 left-1/2 -translate-y-[50%] -translate-x-[50%] ">Check It</h1> --}}
                 </div>
                 <div class="w-full h-72 bg-zinc-200 group relative cursor-pointer">
-                    <img src="/header-2.jpg"
-                        class="h-full object-cover object-center group-hover:grayscale-0 grayscale duration-500"
+                    <img src="/military.jpg"
+                        class="h-full w-full object-cover object-center group-hover:grayscale-0 grayscale duration-500"
                         alt="">
                     <h1 class="font-quantico italic">Military</h1>
                     {{-- <h1 class="py-1 px-3 bg-[rgba(0,0,0,.9)] border border-orange-800] group-hover:block w-fit max-auto my-auto duration-200 font-poppins font-semibold text-white absolute hidden top-1/2 left-1/2 -translate-y-[50%] -translate-x-[50%] ">Check It</h1> --}}
                 </div>
                 <div class="w-full h-72 bg-zinc-200 group relative cursor-pointer">
-                    <img src="/header-3.jpg"
-                        class="h-full object-cover object-center group-hover:grayscale-0 grayscale duration-500"
+                    <img src="/sport.jpg"
+                        class="h-full w-full object-cover object-center group-hover:grayscale-0 grayscale duration-500"
                         alt="">
                     <h1 class="font-quantico italic">Sports</h1>
                     {{-- <h1 class="py-1 px-3 bg-[rgba(0,0,0,.9)] border border-orange-800] group-hover:block w-fit max-auto my-auto duration-200 font-poppins font-semibold text-white absolute hidden top-1/2 left-1/2 -translate-y-[50%] -translate-x-[50%] ">Check It</h1> --}}
@@ -194,7 +197,7 @@
             </div>
         </div>
 
-        <div class="flex flex-col gap-3 p-20 mb-16 bg-zinc-100">
+        <div class="flex flex-col gap-3 px-20 py-8 bg-zinc-100">
             <h1 class="font-quantico text-2xl">New</h1>
             <div class="flex gap-3 flex-wrap">
                 <div class="w-64 flex-col justify-between items-center h-fit bg-white p-5">
@@ -202,7 +205,7 @@
                         <h1 class="font-quantico text-xl font-bold">AK-47</h1>
                         <h2 class="font-poppins text-sm italic rounded text-black">Assault Rifle</h2>
                     </div>
-                    <img src="/header-1.jpg" class="my-4 px-3 hover:scale-110 duration-500" alt="">
+                    <img src="/1.jpg" class="my-4 px-3 hover:scale-110 duration-500" alt="">
                     <div class="flex justify-between text-black items-center">
                         <h1 class="font-quantico font-bold w-fit">$300</h1>
                         <i class="fa-solid fa-cart-plus cursor-pointer hover:text-orange-700"></i>
@@ -213,7 +216,7 @@
                         <h1 class="font-quantico text-xl font-bold">AK-47</h1>
                         <h2 class="font-poppins text-sm italic rounded text-black">Assault Rifle</h2>
                     </div>
-                    <img src="/header-1.jpg" class="my-4 px-3 hover:scale-110 duration-500" alt="">
+                    <img src="/1.jpg" class="my-4 px-3 hover:scale-110 duration-500" alt="">
                     <div class="flex justify-between text-black items-center">
                         <h1 class="font-quantico font-bold w-fit">$300</h1>
                         <i class="fa-solid fa-cart-plus cursor-pointer hover:text-orange-700"></i>
@@ -224,7 +227,7 @@
                         <h1 class="font-quantico text-xl font-bold">AK-47</h1>
                         <h2 class="font-poppins text-sm italic rounded text-black">Assault Rifle</h2>
                     </div>
-                    <img src="/header-1.jpg" class="my-4 px-3 hover:scale-110 duration-500" alt="">
+                    <img src="/1.jpg" class="my-4 px-3 hover:scale-110 duration-500" alt="">
                     <div class="flex justify-between text-black items-center">
                         <h1 class="font-quantico font-bold w-fit">$300</h1>
                         <i class="fa-solid fa-cart-plus cursor-pointer hover:text-orange-700"></i>
@@ -235,7 +238,7 @@
                         <h1 class="font-quantico text-xl font-bold">AK-47</h1>
                         <h2 class="font-poppins text-sm italic rounded text-black">Assault Rifle</h2>
                     </div>
-                    <img src="/header-1.jpg" class="my-4 px-3 hover:scale-110 duration-500" alt="">
+                    <img src="/1.jpg" class="my-4 px-3 hover:scale-110 duration-500" alt="">
                     <div class="flex justify-between text-black items-center">
                         <h1 class="font-quantico font-bold w-fit">$300</h1>
                         <i class="fa-solid fa-cart-plus cursor-pointer hover:text-orange-700"></i>
@@ -246,7 +249,7 @@
                         <h1 class="font-quantico text-xl font-bold">AK-47</h1>
                         <h2 class="font-poppins text-sm italic rounded text-black">Assault Rifle</h2>
                     </div>
-                    <img src="/header-1.jpg" class="my-4 px-3 hover:scale-110 duration-500" alt="">
+                    <img src="/1.jpg" class="my-4 px-3 hover:scale-110 duration-500" alt="">
                     <div class="flex justify-between text-black items-center">
                         <h1 class="font-quantico font-bold w-fit">$300</h1>
                         <i class="fa-solid fa-cart-plus cursor-pointer hover:text-orange-700"></i>
@@ -257,7 +260,7 @@
                         <h1 class="font-quantico text-xl font-bold">AK-47</h1>
                         <h2 class="font-poppins text-sm italic rounded text-black">Assault Rifle</h2>
                     </div>
-                    <img src="/header-1.jpg" class="my-4 px-3 hover:scale-110 duration-500" alt="">
+                    <img src="/1.jpg" class="my-4 px-3 hover:scale-110 duration-500" alt="">
                     <div class="flex justify-between text-black items-center">
                         <h1 class="font-quantico font-bold w-fit">$300</h1>
                         <i class="fa-solid fa-cart-plus cursor-pointer hover:text-orange-700"></i>
@@ -268,73 +271,116 @@
                         <h1 class="font-quantico text-xl font-bold">AK-47</h1>
                         <h2 class="font-poppins text-sm italic rounded text-black">Assault Rifle</h2>
                     </div>
-                    <img src="/header-1.jpg" class="my-4 px-3 hover:scale-110 duration-500" alt="">
+                    <img src="/1.jpg" class="my-4 px-3 hover:scale-110 duration-500" alt="">
                     <div class="flex justify-between text-black items-center">
                         <h1 class="font-quantico font-bold w-fit">$300</h1>
                         <i class="fa-solid fa-cart-plus cursor-pointer hover:text-orange-700"></i>
                     </div>
                 </div>
-                <div class="w-64 flex justify-center items-center text-zinc-600 hover:text-black">
+                <div
+                    class="w-64 flex-col justify-between relative items-center h-fit bg-white p-5 after:content-[''] after:absolute after:bottom-0 after:top-0 after:left-0 after:right-0 after:bg-gradient-to-l after:from-zinc-100 after:from-20% after:to-transparent">
+                    <div class="flex justify-between items-center">
+                        <h1 class="font-quantico text-xl font-bold">AK-47</h1>
+                        <h2 class="font-poppins text-sm italic rounded text-black">Assault Rifle</h2>
+                    </div>
+                    <img src="/1.jpg" class="my-4 px-3 hover:scale-110 duration-500" alt="">
+                    <div class="flex justify-between text-black items-center">
+                        <h1 class="font-quantico font-bold w-fit">$300</h1>
+                        <i class="fa-solid fa-cart-plus cursor-pointer hover:text-orange-700"></i>
+                    </div>
+                    <i
+                        class="fa-solid fa-circle-arrow-right text-6xl text-white hover:text-zinc-200 duration-300 absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 z-10 cursor-pointer"></i>
+                </div>
+                {{-- <div class="w-64 flex justify-center items-center text-zinc-600 hover:text-black">
                     <i class="fa-solid fa-circle-arrow-right text-6xl  mx-auto my-auto cursor-pointer"></i>
+                </div> --}}
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-3 p-20 mb-16 relative text-white before:opacity-50 before:content-[''] before:absolute before:top-0 before:bottom-0 before:left-0 before:right-0 before:bg-black"
+            style="background-image: url('ad-background.jpg'); background-position: center; background-size: cover">
+            <h1 class="font-quantico text-5xl text-center font-bold mb-8 uppercase z-10">Top Gun Deals of the Month
+            </h1>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="w-full p-0.5 bg-gradient-to-br from-red-600 to-blue-700 h-72 relative overflow-hidden">
+                    <div
+                        class="z-10 flex justify-between items-end absolute bottom-0.5 py-4  bg-gradient-to-t from-black to-transparent top-0 to-50% left-0.5 right-0.5 group px-2 peer">
+                        <h1
+                            class="font-quantico text-xl group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-l group-hover:from-red-600 group-hover:to-blue-700 duration-500">
+                            20% Discount <span class="block font-poppins font-light text-sm group-hover:text-white"><s><i>$299.97</i></s><em class="text-lg font-semibold inline-block ml-3">$239.99</em></span></h1>
+                        <h2
+                            class="py-1 px-3 text-zinc-400 font-poppins italic text-sm font-light hover:font-bold cursor-pointer hover:text-white duration-300">
+                            Purchase Now</h2>
+                    </div>
+                    <img src="best-1.jpg"
+                        class="w-full object-cover object-center h-full hover:scale-105 duration-700 peer-hover:scale-125"
+                        alt="">
+                </div>
+                <div class="w-full p-0.5 bg-gradient-to-br from-red-600 to-blue-700 h-72 relative overflow-hidden">
+                    <div
+                        class="z-10 flex justify-between items-end absolute bottom-0.5 py-4  bg-gradient-to-t from-black to-transparent top-0 to-50% left-0.5 right-0.5 group px-2 peer">
+                        <h1
+                            class="font-quantico text-xl group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-l group-hover:from-red-600 group-hover:to-blue-700 duration-500">
+                            25% Discount  <span class="block font-poppins font-light text-sm group-hover:text-white"><s><i>$819.99</i></s><em class="text-lg font-semibold inline-block ml-3">$629.99</em></span></h1>
+                        <h2
+                            class="py-1 px-3 text-zinc-400 font-poppins italic text-sm font-light hover:font-bold cursor-pointer hover:text-white duration-300">
+                            Purchase Now</h2>
+                    </div>
+                    <img src="best-2.jpg"
+                        class="w-full object-cover object-center h-full hover:scale-105 duration-700 peer-hover:scale-125"
+                        alt="">
                 </div>
             </div>
         </div>
 
-        <div class="flex flex-col gap-3 p-20 mb-16">
-            <h1 class="font-quantico text-4xl font-bold mb-4">Top Gun Deals of the Month</h1>
-            <div class="grid grid-cols-2 gap-4">
-                <div class="w-full h-64 relative overflow-hidden">
-                    <div
-                        class="z-10 flex justify-between items-end absolute bottom-0 py-4  bg-gradient-to-t from-black to-transparent top-1/2 left-0 right-0 px-2 peer">
-                        <h1 class="font-quantico text-xl text-white">60% Discount</h1>
-                        <h2
-                            class="py-1 px-3 text-zinc-400 font-poppins italic text-sm font-light hover:font-bold cursor-pointer hover:text-white duration-300">
-                            Purchase Now</h2>
-                    </div>
-                    <img src="header-3.jpg"
-                        class="w-full object-cover object-center h-full hover:scale-105 duration-700 peer-hover:scale-105"
-                        alt="">
+        <div class="grid grid-cols-3 gap-5 px-10 overflow-hidden mb-28">
+            <h1 class="col-span-3 text-center text-4xl font-bold italic font-quantico">Select Weapons</h1>
+            <div
+                class="group h-[35rem] w-full bg-black relative before:content-[''] before:absolute before:top-1/2 before:bottom-0 before:left-0 before:right-0 before:bg-gradient-to-t before:from-black before:to-transparent after:content-[''] after:-bottom-10 after:-right-16 after:bg-white after:absolute after:h-20 after:w-40 after:-rotate-45">
+                <img src="/firearms.jpg" class="h-full w-full object-cover object-center z-20" alt="">
+                <h1 class="font-quantico text-4xl font-bold italic text-white absolute bottom-10 w-full text-center">
+                    Firearms</h1>
+                <div
+                    class="absolute top-0 bottom-0 left-0 right-0 bg-black flex justify-center items-center opacity-0 group-hover:opacity-100 bg-[rgba(0,0,0,0.5)] duration-300">
+                    <h1
+                        class="font-quantico uppercase cursor-pointer text-xl py-1 px-3 border border-zinc-600 font-light text-zinc-600 hover:text-white scale-0 group-hover:scale-100 hover:border-white duration-500">
+                        Check All</h1>
                 </div>
-                <div class="w-full h-64 relative overflow-hidden">
-                    <div
-                        class="z-10 flex justify-between items-end absolute bottom-0 py-4  bg-gradient-to-t from-black to-transparent top-1/2 left-0 right-0 px-2 peer">
-                        <h1 class="font-quantico text-xl text-white">60% Discount</h1>
-                        <h2
-                            class="py-1 px-3 text-zinc-400 font-poppins italic text-sm font-light hover:font-bold cursor-pointer hover:text-white duration-300">
-                            Purchase Now</h2>
-                    </div>
-                    <img src="header-3.jpg"
-                        class="w-full object-cover object-center h-full hover:scale-105 duration-700 peer-hover:scale-105"
-                        alt="">
+            </div>
+            <div
+                class="group h-[35rem] w-full bg-black relative before:content-[''] before:absolute before:top-1/2 before:bottom-0 before:left-0 before:right-0 before:bg-gradient-to-t before:from-black before:to-transparent after:content-[''] after:-bottom-10 after:-right-16 after:bg-white after:absolute after:h-20 after:w-40 after:-rotate-45">
+                <img src="/ammo.jpg" class="h-full w-full object-cover object-center z-20" alt="">
+                <h1 class="font-quantico text-4xl font-bold italic text-white absolute bottom-10 w-full text-center">
+                    Ammo</h1>
+                <div
+                    class="absolute top-0 bottom-0 left-0 right-0 bg-black flex justify-center items-center opacity-0 group-hover:opacity-100 bg-[rgba(0,0,0,0.5)] duration-300">
+                    <h1
+                        class="font-quantico uppercase cursor-pointer text-xl py-1 px-3 border border-zinc-600 font-light text-zinc-600 hover:text-white scale-0 group-hover:scale-100 hover:border-white duration-500">
+                        Check All</h1>
                 </div>
-                <div class="w-full h-64 relative overflow-hidden">
-                    <div
-                        class="z-10 flex justify-between items-end absolute bottom-0 py-4  bg-gradient-to-t from-black to-transparent top-1/2 left-0 right-0 px-2 peer">
-                        <h1 class="font-quantico text-xl text-white">60% Discount</h1>
-                        <h2
-                            class="py-1 px-3 text-zinc-400 font-poppins italic text-sm font-light hover:font-bold cursor-pointer hover:text-white duration-300">
-                            Purchase Now</h2>
-                    </div>
-                    <img src="header-3.jpg"
-                        class="w-full object-cover object-center h-full hover:scale-105 duration-700 peer-hover:scale-105"
-                        alt="">
-                </div>
-                <div class="w-full h-64 relative overflow-hidden">
-                    <div
-                        class="z-10 flex justify-between items-end absolute bottom-0 py-4  bg-gradient-to-t from-black to-transparent top-1/2 left-0 right-0 px-2 peer">
-                        <h1 class="font-quantico text-xl text-white">60% Discount</h1>
-                        <h2
-                            class="py-1 px-3 text-zinc-400 font-poppins italic text-sm font-light hover:font-bold cursor-pointer hover:text-white duration-300">
-                            Purchase Now</h2>
-                    </div>
-                    <img src="header-3.jpg"
-                        class="w-full object-cover object-center h-full hover:scale-105 duration-700 peer-hover:scale-105"
-                        alt="">
+            </div>
+            <div
+                class="group h-[35rem] w-full bg-black relative before:content-[''] before:absolute before:top-1/2 before:bottom-0 before:left-0 before:right-0 before:bg-gradient-to-t before:from-black before:to-transparent after:content-[''] after:-bottom-10 after:-right-16 after:bg-white after:absolute after:h-20 after:w-40 after:-rotate-45">
+                <img src="/grenade.jpg" class="h-full w-full object-cover object-center z-20" alt="">
+                <h1 class="font-quantico text-4xl font-bold italic text-white absolute bottom-10 w-full text-center">
+                    Grenade</h1>
+                <div
+                    class="absolute top-0 bottom-0 left-0 right-0 bg-black flex justify-center items-center opacity-0 group-hover:opacity-100 bg-[rgba(0,0,0,0.5)] duration-300">
+                    <h1
+                        class="font-quantico uppercase cursor-pointer text-xl py-1 px-3 border border-zinc-600 font-light text-zinc-600 hover:text-white scale-0 group-hover:scale-100 hover:border-white duration-500">
+                        Check All</h1>
                 </div>
             </div>
         </div>
 
     </main>
+
+    <footer
+        class="flex justify-between items-center py-3 px-4 bg-gradient-to-br from-zinc-200 to-zinc-400 border-t border-black">
+        <h1 class="font-poppins font-bold italic text-zinc-800">Copyright © August 2024</h1>
+        <h2 class="font-quantico font-bold text-2xl italic text-black uppercase">Shoot, Shoot, and Kill Them</h2>
+        <h3 class="font-urbanist font-light text-zinc-800">Muhammad Miftakul Salam</h3>
+    </footer>
 
     <div id="popup-modal" tabindex="-1"
         class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">

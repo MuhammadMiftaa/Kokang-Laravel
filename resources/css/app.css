@@ -147,7 +147,8 @@
 }
 
 .text-6xl.font-bold.font-quantico,
-.text-2xl.mb-4.text-zinc-300{
-  text-shadow: 5px 5px 5px #000;;
+.text-2xl.mb-4.text-zinc-300,
+.font-quantico.text-5xl.text-center.font-bold.mb-8.uppercase.z-10{
+  text-shadow: 5px 5px 10px #000;;
 }
 
