@@ -148,7 +148,11 @@
 
 .text-6xl.font-bold.font-quantico,
 .text-2xl.mb-4.text-zinc-300,
-.font-quantico.text-5xl.text-center.font-bold.mb-8.uppercase.z-10{
-  text-shadow: 5px 5px 10px #000;;
+.font-quantico.text-5xl.text-center.font-bold.mb-8.uppercase.z-10
+{
+  text-shadow: 2px 2px 10px #000;
 }
 
+.cat-box{
+    clip-path: polygon(0 15%, 20% 0, 100% 0, 100% 85%, 80% 100%, 0 100%);
+}

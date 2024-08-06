@@ -14,5 +14,21 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage');
+    return view('homepage', ['title' => 'Homepage']);
+});
+
+Route::get('/firearms', function () {
+    return view('firearms', ['title' => 'Firearms']);
+});
+
+Route::get('/firearms/{type}', function($type){
+    return view('firearm', ['type' => $type]);
+});
+
+Route::get('/ammo', function () {
+    return view('ammo', ['title' => 'Ammo']);
+});
+
+Route::get('/grenade', function () {
+    return view('grenade', ['title' => 'Grenade']);
 });

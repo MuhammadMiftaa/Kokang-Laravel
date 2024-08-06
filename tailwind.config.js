@@ -20,6 +20,9 @@ export default {
                 poppins: ["Poppins", "sans-serif"],
                 quantico: ["Quantico", "sans-serif"],
             },
+            colors: {
+                "black-transparent": "rgba(0, 0, 0, 0.5)",
+            }
         },
     },
     plugins: [require("flowbite/plugin")],
