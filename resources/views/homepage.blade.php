@@ -12,7 +12,7 @@
 <body class="overflow-hidde">
     
     <x-header />
-    
+
     <main id="main">
         
         <x-navbar />
@@ -23,13 +23,13 @@
         
         <x-banner />
         
-        <x-category />
+        <x-category :data="$data_functionality" />
         
-        <x-product />
+        <x-products :data="$data_product" />
         
         <x-promotional />
-        
-        <x-product-type />
+
+        <x-product-type :data="$data_weapon" />
         
     </main>
     

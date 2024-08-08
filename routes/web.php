@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\HomepageController;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\WeaponController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,17 +16,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('homepage', ['title' => 'Homepage']);
-});
+Route::get('/', [HomepageController::class, 'index']);
 
-Route::get('/firearms', function () {
-    return view('firearms', ['title' => 'Firearms']);
-});
+Route::get('/firearms', [WeaponController::class, 'index']);
 
-Route::get('/firearms/{type}', function($type){
-    return view('firearm', ['type' => $type]);
-});
+Route::get('/firearms/type/{type}', [ProductController::class, 'index']);
 
 Route::get('/ammo', function () {
     return view('ammo', ['title' => 'Ammo']);
