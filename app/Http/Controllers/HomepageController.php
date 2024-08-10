@@ -15,10 +15,11 @@ class HomepageController extends Controller
      */
     public function index()
     {
+        // $weapon = compact('type');
         $data_weapon = Weapon::orderBy('weapon_id', 'ASC')->get();
         $data_weapontype = WeaponType::orderBy('weapontype_id', 'ASC')->get();
         $data_functionality = Functionality::orderBy('function_id', 'ASC')->get();
-        $data_product = Product::orderBy('product_id', 'ASC')->take(12)->get();
+        $data_product = Product::orderBy('product_id', 'ASC')->take(8)->get();
         return view('homepage', ['data_weapon' => $data_weapon, 'data_weapontype' => $data_weapontype, 'data_functionality' => $data_functionality, 'data_product' => $data_product]);
     }
 

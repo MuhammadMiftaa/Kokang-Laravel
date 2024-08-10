@@ -11,10 +11,35 @@ class ProductController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
+    public function index($type)
     {
-        $data = Product::orderBy('product_id', 'ASC')->paginate(30);
-        return view('productpage', ['data' => $data]);
+        $weapon = compact('type');
+        switch ($weapon['type']) {
+            case 'pistol':
+                $type = 1;
+                break;
+            case 'assault-rifle':
+                $type = 2;
+                break;
+            case 'shotgun':
+                $type = 3;
+                break;
+            case 'submachine-gun':
+                $type = 4;
+                break;
+            case 'machine-gun':
+                $type = 5;
+                break;
+            case 'sniper':
+                $type = 6;
+                break;
+            default:
+                $type = 0;
+                break;
+        }
+        $data = Product::where('weapontype_id', $type)->paginate(40);
+        
+        return view('productpage', ['data' => $data, 'weapon' => $weapon, 'type' => $weapon['type']]);
     }
 
     /**

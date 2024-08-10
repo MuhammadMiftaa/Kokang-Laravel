@@ -24,7 +24,7 @@
                 @foreach ($navbarlinks as $link)
                     <li
                         class="{{ request()->is(strtolower($link)) || (request()->is('/') && $link == 'Home') ? 'text-black border-b border-zinc-700 ' : 'text-zinc-700' }}">
-                        <a href="{{ $link == 'Home' ? '/' : strtolower($link) }}"
+                        <a href="{{ $link == 'Home' ? '/' : '/'.strtolower($link) }}"
                             class="text-inherit cursor-pointer block py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-black md:p-0 ">{{ $link }}</a>
                     </li>
                 @endforeach

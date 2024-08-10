@@ -25,7 +25,7 @@
         
         <x-category :data="$data_functionality" />
         
-        <x-products :data="$data_product" />
+        <x-products :data="$data_product"/>
         
         <x-promotional />
 

@@ -20,7 +20,7 @@
                         alt="">
                     <div
                         class="absolute top-0 bottom-0 left-0 right-0 opacity-0 hover:opacity-100 bg-transparent duration-300 flex justify-center items-end p-10 group">
-                        <a href="/firearms/type/{{ str_replace(' ', '', $item->weapontype_name) }}"
+                        <a href="/firearms/type/{{ str_replace(' ', '-', $item->weapontype_name) }}"
                             class="text-shadow font-quantico text-3xl uppercase font-bold italic text-white hover:tracking-widenpm run duration-200 scale-0 group-hover:scale-100 absolute">
                             {{ $item->weapontype_name }}</a>
                     </div>

@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot:title>{{ "Pistol" }}</x-slot>
+    <x-slot:title>{{ ucwords($weapon["type"]) }}</x-slot>
 
-    <x-products :data="$data"></x-products>
+    <x-products :data="$data" :type="$type"></x-products>
 </x-layout>
